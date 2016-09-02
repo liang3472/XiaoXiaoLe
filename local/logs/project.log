@@ -1,0 +1,47 @@
+2016-09-02T10:57:42.638Z - normal: Load ~/.CocosCreator/settings.json
+2016-09-02T10:57:42.642Z - normal: checking language setting...
+2016-09-02T10:57:42.643Z - normal: Language: zh
+2016-09-02T10:57:42.670Z - success: protocol editor-framework registered
+2016-09-02T10:57:42.670Z - success: protocol app registered
+2016-09-02T10:57:42.671Z - success: protocol packages registered
+2016-09-02T10:57:42.671Z - success: protocol theme registered
+2016-09-02T10:57:42.671Z - success: protocol unpack registerred
+2016-09-02T10:57:42.882Z - normal: connected!
+2016-09-02T10:57:42.885Z - normal: Check project /Users/lianghangbing/MyGitHub/GameProj/XiaoXiaoLe
+2016-09-02T10:57:42.887Z - normal: Initializing Cocos Creator Editor
+2016-09-02T10:57:43.281Z - normal: Initializing Cocos2d
+2016-09-02T10:57:43.395Z - normal: Initializing Asset Database
+2016-09-02T10:57:43.420Z - success: protocol uuid registerred
+2016-09-02T10:57:43.421Z - success: protocol db registerred
+2016-09-02T10:57:43.421Z - success: protocol thumbnail registerred
+2016-09-02T10:57:43.422Z - normal: Loading editor/builtin packages
+2016-09-02T10:57:43.528Z - success: assets loaded
+2016-09-02T10:57:43.532Z - success: builder loaded
+2016-09-02T10:57:43.537Z - success: hierarchy loaded
+2016-09-02T10:57:43.541Z - success: inspector loaded
+2016-09-02T10:57:43.543Z - success: keystore loaded
+2016-09-02T10:57:43.547Z - success: node-library loaded
+2016-09-02T10:57:43.550Z - success: preferences loaded
+2016-09-02T10:57:43.565Z - success: project-importer loaded
+2016-09-02T10:57:43.568Z - success: project-settings loaded
+2016-09-02T10:57:43.572Z - success: ui-kit loaded
+2016-09-02T10:57:43.577Z - success: ui-grid loaded
+2016-09-02T10:57:43.582Z - success: scene loaded
+2016-09-02T10:57:43.583Z - success: sprite-editor loaded
+2016-09-02T10:57:43.588Z - success: timeline loaded
+2016-09-02T10:57:43.589Z - normal: Loading builtin packages
+2016-09-02T10:57:43.593Z - success: asset-db-debugger loaded
+2016-09-02T10:57:43.595Z - success: cocos-package loaded
+2016-09-02T10:57:43.597Z - success: code-editor loaded
+2016-09-02T10:57:43.598Z - success: color-picker loaded
+2016-09-02T10:57:43.603Z - success: console loaded
+2016-09-02T10:57:43.607Z - success: package-manager loaded
+2016-09-02T10:57:43.611Z - success: tester loaded
+2016-09-02T10:57:43.615Z - success: ui-kit-preview-extra loaded
+2016-09-02T10:57:43.617Z - success: ui-kit-preview loaded
+2016-09-02T10:57:43.620Z - success: ui-tree loaded
+2016-09-02T10:57:43.645Z - normal: Initializing project /Users/lianghangbing/MyGitHub/GameProj/XiaoXiaoLe
+2016-09-02T10:57:43.647Z - normal: Loading packages
+2016-09-02T10:57:43.651Z - normal: Run Application
+2016-09-02T10:57:43.930Z - success: preview server running at http://localhost:7457
+2016-09-02T10:57:47.570Z - normal: 1.2.1-rc.1
