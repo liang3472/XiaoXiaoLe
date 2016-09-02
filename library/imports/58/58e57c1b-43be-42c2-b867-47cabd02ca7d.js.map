@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,UAAU,GAAG,EAAE,CAAC,IAAI,CAAC;AACrB,gBAAY,EAAE,CAAC,CAAC;AAChB,WAAO,EAAE,CAAC,CAAC;AACX,YAAQ,EAAE,CAAC,CAAC;AACZ,UAAM,EAAE,CAAC,CAAC;CACb,CAAC,CAAC;AACH,MAAM,CAAC,OAAO,GAAG,UAAU,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var GameStatus = cc.Enum({\n    SHOWSTARTBTN: -1,   // 显示开始按钮\n    PLAYING: -1,        // 游戏进行中\n    GAMEOVER: -1,       // 游戏结束\n    DIALOG: -1          // 弹窗\n});\nmodule.exports = GameStatus;\n"
+  ]
+}

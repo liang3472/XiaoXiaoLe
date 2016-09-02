@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,MAAM,CAAC,OAAO,GAAG;;;;AAIf,eAAa,EAAE,uBAAU,GAAG,EAAE,MAAM,EAAE;AACpC,WAAO,CAAC,KAAK,CAAC,MAAM,CAAC,CAAC,IAAI,CAAC,GAAG,CAAC,GAAG,GAAG,CAAA,CAAE,KAAK,CAAC,CAAC,MAAM,CAAC,CAAC;GACvD;;;;;AAKD,iBAAe,EAAE,2BAAY;AAC3B,WAAO,kBAAiB,CAAC,IAAI,CAAC,SAAS,CAAC,SAAS,CAAC;MAAC;GACpD;;;;;;AAMD,gBAAc,EAAE,0BAAY;AAC1B,WAAO,SAAQ,CAAC,IAAI,CAAC,SAAS,CAAC,SAAS,CAAC;MAAC;GAC3C;;;;;;AAMD,gBAAc,EAAE,0BAAY;AAC1B,WAAO,SAAQ,CAAC,IAAI,CAAC,SAAS,CAAC,SAAS,CAAC;MAAC;GAC3C;;;;;;;AAOD,YAAU,EAAE,oBAAU,IAAI,EAAE;AAC1B,QAAI,GAAG;QAAE,GAAG,GAAG,IAAI,MAAM,CAAC,OAAO,GAAG,IAAI,GAAG,eAAe,CAAC,CAAC;AAC5D,QAAI,GAAG,GAAG,QAAQ,CAAC,MAAM,CAAC,KAAK,CAAC,GAAG,CAAC,EAClC,OAAO,QAAQ,CAAC,GAAG,CAAC,CAAC,CAAC,CAAC,CAAC,KAExB,OAAO,IAAI,CAAC;GACf;;;;;AAKD,oBAAkB,EAAE,4BAAU,IAAI,EAAE,YAAY,EAAE;AAChD,MAAE,CAAC,MAAM,CAAC,OAAO,CAAC,IAAI,EAAE,EAAE,CAAC,WAAW,EAAE,UAAU,GAAG,EAAE,WAAW,EAAE;AAClE,kBAAY,CAAC,WAAW,GAAG,WAAW,CAAC;KACxC,CAAC,CAAC;GACJ;;;;;;AAMD,cAAY,EAAE,wBAAY;AACxB,WAAO,IAAI,CAAC,eAAe,EAAE,IAAI,EAAE,CAAC,GAAG,CAAC,EAAE,KAAK,EAAE,CAAC,GAAG,CAAC,MAAM,CAAC;GAC9D;CACF,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "module.exports = {\n  /**\n   * 数字补0\n   */\n  prefixInteger: function (num, length) {\n    return (Array(length).join('0') + num).slice(-length);\n  },\n\n  /**\n   * 检测是否是微信\n   */\n  isWeChatBrowser: function () {\n    return /MicroMessenger/i.test(navigator.userAgent);\n  },\n\n  /**\n   * 检测是否是饿了么\n   * @returns {boolean}\n   */\n  isElemeBrowser: function () {\n    return /Eleme/i.test(navigator.userAgent);\n  },\n\n  /**\n   * 检测是否是饿了么\n   * @returns {boolean}\n   */\n  isWeiBoBrowser: function () {\n    return /WeiBo/i.test(navigator.userAgent);\n  },\n\n  /**\n   * 按字段名搜索Cookie值\n   * @param name  字段名\n   * @returns {null}\n   */\n  scanCookie: function (name) {\n    var arr, reg = new RegExp(\"(^| )\" + name + \"=([^;]*)(;|$)\");\n    if (arr = document.cookie.match(reg))\n      return unescape(arr[2]);\n    else\n      return null;\n  },\n\n  /**\n   * 预加载SpriteFrame\n   */\n  preLoadSpriteFrame: function (path, targetSprite) {\n    cc.loader.loadRes(path, cc.SpriteFrame, function (err, spriteFrame) {\n      targetSprite.spriteFrame = spriteFrame;\n    });\n  },\n\n  /**\n   * 是否渲染动画\n   * @returns {boolean}\n   */\n  shouldRender: function () {\n    return this.isWeChatBrowser() || cc.sys.os === cc.sys.OS_IOS;\n  }\n};\n"
+  ]
+}

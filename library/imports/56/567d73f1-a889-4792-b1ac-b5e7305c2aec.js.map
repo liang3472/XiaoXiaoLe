@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,KAAK,GAAG,OAAO,CAAC,OAAO,CAAC,CAAC;;AAE7B,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,aAAK,EAAE,EAAE,CAAC,KAAK;KAClB;;AAED,QAAI,EAAE,cAAU,IAAI,EAAE;AAClB,YAAI,CAAC,IAAI,GAAG,IAAI,CAAC;AACjB,YAAI,CAAC,MAAM,GAAG,CAAC,CAAC;KACnB;;;;;;AAMD,YAAQ,EAAE,oBAAY;AAClB,eAAO,IAAI,CAAC,MAAM,CAAC;KACtB;;;;;;AAMD,YAAQ,EAAE,kBAAU,KAAK,EAAE;AACzB,YAAI,CAAC,MAAM,GAAG,KAAK,CAAC;AACpB,YAAI,CAAC,YAAY,EAAE,CAAC;KACrB;;;;;AAKD,YAAQ,EAAE,oBAAY;AAClB,YAAI,CAAC,MAAM,IAAI,CAAC,CAAC;AACjB,YAAI,CAAC,YAAY,EAAE,CAAC;KAEvB;;;;;AAKD,gBAAY,EAAE,wBAAY;AACtB,YAAI,CAAC,KAAK,CAAC,MAAM,GAAG,KAAK,CAAC,aAAa,CAAC,IAAI,CAAC,MAAM,EAAE,CAAC,CAAC,CAAC;KAC3D;;CAEJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var Utils = require('Utils');\n\ncc.Class({\n    extends: cc.Component,\n\n    properties: {\n        score: cc.Label,\n    },\n\n    init: function (game) {\n        this.game = game;\n        this._score = 0;\n    },\n\n    /**\n     * 获取分数\n     * @returns {number|*}\n     */\n    getScore: function () {\n        return this._score;\n    },\n\n    /**\n     * 设置分数\n     * @param score\n     */\n    setScore: function (score) {\n      this._score = score;\n      this._updateScore();\n    },\n\n    /**\n     * 增加分数\n     */\n    addScore: function () {\n        this._score += 1;\n        this._updateScore();\n        \n    },\n\n    /**\n     * 更新分数\n     */\n    _updateScore: function () {\n        this.score.string = Utils.prefixInteger(this._score, 3);\n    }\n\n});\n"
+  ]
+}

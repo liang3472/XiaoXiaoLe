@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,UAAU,GAAG,OAAO,CAAC,YAAY,CAAC,CAAC;AACvC,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,UAAU;;AAEnB,cAAU,EAAE,EACX;;AAED,aAAS,EAAE,qBAAY;AACnB,YAAI,CAAC,IAAI,EAAE,CAAC;KACf;;CAEJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var BaseDialog = require('BaseDialog');\ncc.Class({\n    extends: BaseDialog,\n\n    properties: {\n    },\n\n    showStart: function () {\n        this.show();\n    }\n\n});\n"
+  ]
+}
